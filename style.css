@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0px;
+    margin-left: 80px;
+    margin-right: 80px;
+    /* border: 1px solid black; */
+    height: 100vh;
+}
+
+
+
+.grid-item01 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    height: 467px;
+    width: 840px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+
+    background-image: url("./images/desktop-image-hero-1.jpg");
+}
+
+nav {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    color: aliceblue;
+}
+
+nav .logo {
+    font-size: 35px;
+}
+
+nav a {
+    margin-left: 40px;
+    color: aliceblue;
+
+}
+
+.grid-item02 {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+    height: 467px;
+    margin-left: 8px;
+    background-color: rgb(239, 239, 239);
+    margin-bottom: 0px;
+    margin-left: 0px;
+
+
+}
+
+.hh {
+    background-color: rgb(73, 73, 73);
+    height: 57px;
+    width: 90px;
+    display: flex;
+
+    .ee {
+        height: 57px;
+        width: 46px;
+        background-color: black;
+    }
+
+    .ee i {
+        margin-left: 16px;
+        margin-top: 20px;
+    }
+
+    .eo {
+        height: 57px;
+        width: 46px;
+        background-color: rgb(172, 172, 172);
+    }
+
+    .eo i {
+        margin-left: 13px;
+        margin-top: 18px;
+    }
+}
+
+.discover {
+    padding: 80px;
+
+    /* align-items: center; */
+    #dis {
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #with {
+        margin-top: 30px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+
+    }
+
+    .shop1 {
+        margin-top: 30px;
+
+        #shop1 {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 8px;
+            color: gray;
+
+        }
+    }
+
+}
+
+.about {
+    padding: 35px;
+
+    /* align-items: center; */
+    #about {
+        font-size: 15px;
+        letter-spacing: 4px;
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #our {
+        margin-top: 30px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+
+    }
+
+
+}
+
+
+/* h3 {
+    margin: 0px;
+} */
+.grid-item03 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.grid-item04 {
+    background-color: rgb(255, 255, 255);
+    grid-column: 2 / span 2;
+    grid-row: 2;
+
+
+
+
+}
+
+.grid-item05 {
+    /* background-color: rgb(201, 17, 17); */
+    grid-column: 4 / span 1;
+    grid-row: 2;
+    height: 1px;
+}
+
+@media (max-width: 500px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .grid-item01 {
+        
+        height: 400px;
+        width:500px;
+
+        background-image: url("./images/desktop-image-hero-1.jpg");
+    }
+    nav .logo h4 {
+        margin-left: 170px;
+    }
+    nav a {
+        display: none;
+
+    }
+
+    .grid-item02 {
+        display: flex;
+
+        flex-direction: column;
+      /* flex-direction: row; */
+
+
+        background-color: rgb(232, 232, 232);
+
+        height: 450px;
+        width:500px;
+
+    }
+    .hh {
+        display: none;               
+    }
+
+    .grid-item03 {
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        width:500px;
+
+        
+
+    }
+
+    .grid-item04 {
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        height: 230px;
+        width: 500px;
+        padding: 30px;
+
+    }
+
+    .grid-item05 {
+        display: flex;
+        flex-direction: column;
+        /* display: none; */
+        height: 250px;
+        width: 500px;
+        margin-top: 80px;
+
+    }
+
+}
